@@ -1,0 +1,150 @@
+html {
+  height: 100%; }
+
+.container {
+  width: 100%;
+  padding: 0;
+  height: 100%; }
+
+body {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+  height: 100%; }
+
+header {
+  background-color: #3A3F4F;
+  height: 7em; }
+  header h1 {
+    margin: 0;
+    background-color: #FD4D5C;
+    display: inline-block;
+    float: left;
+    line-height: 99px;
+    padding: 0 50px;
+    color: #fff;
+    font-weight: 400;
+    width: 30%;
+    text-align: center; }
+  header .glyphicon-apple {
+    padding-right: 8px; }
+  header nav {
+    float: left; }
+    header nav ul {
+      padding: 0;
+      margin-bottom: 0; }
+      header nav ul li {
+        display: inline-block;
+        height: 98px;
+        width: 98px;
+        font-size: 1.4em; }
+        header nav ul li a {
+          text-align: center;
+          display: block;
+          padding-top: 22px;
+          color: #fff; }
+          header nav ul li a:hover, header nav ul li a:active {
+            text-decoration: none;
+            color: #fff; }
+            header nav ul li a:hover .nav-icon, header nav ul li a:active .nav-icon {
+              color: #3A3F4F; }
+  header .nav-home {
+    background-color: #58D4E1; }
+  header .nav-about {
+    background-color: #FFB87D;
+    position: relative;
+    right: 2px; }
+  header .nav-contact {
+    background-color: #26AD6A;
+    position: relative;
+    right: 5px; }
+  header .nav-icon {
+    display: block;
+    font-size: 1.7em; }
+
+.sidebar {
+  background-color: #3A3F4F;
+  clear: both;
+  float: left;
+  width: 30%;
+  height: 100%; }
+  .sidebar h2 {
+    margin: 0;
+    color: #fff;
+    background-color: #4A5060;
+    text-align: center;
+    color: #d3d3d3;
+    padding: 20px 0;
+    margin-bottom: 20px; }
+  .sidebar .info {
+    top: 8px;
+    right: 8px;
+    font-size: 1.2em; }
+  .sidebar .info-sidebar {
+    margin-bottom: 30px;
+    overflow: auto;
+    zoom: 1; }
+  .sidebar .hotels, .sidebar .restaurants, .sidebar .activities {
+    font-family: 'Open Sans', sans-serif;
+    color: #d3d3d3;
+    clear: both; }
+    .sidebar .hotels .form-group, .sidebar .restaurants .form-group, .sidebar .activities .form-group {
+      padding: 0 20px;
+      clear: both;
+      margin-bottom: 70px; }
+    .sidebar .hotels label, .sidebar .restaurants label, .sidebar .activities label {
+      font-size: 1.5em;
+      font-weight: 300;
+      clear: both;
+      display: block; }
+    .sidebar .hotels select, .sidebar .restaurants select, .sidebar .activities select {
+      width: 80%;
+      float: left;
+      clear: both;
+      background-color: #d3d3d3; }
+    .sidebar .hotels .check, .sidebar .restaurants .check, .sidebar .activities .check {
+      float: left;
+      padding-left: 15px;
+      padding-top: 3px;
+      font-size: 1.8em;
+      color: #26AD6A; }
+  .sidebar .activities {
+    margin-bottom: 40px; }
+  .sidebar .itinerary-container {
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #d3d3d3; }
+    .sidebar .itinerary-container h3 {
+      font-family: 'Open Sans', sans-serif;
+      color: #d3d3d3;
+      font-weight: 300; }
+    .sidebar .itinerary-container .btn-day {
+      background-color: #2cddc8;
+      color: #4A5060;
+      border-color: #2cddc8;
+      border-radius: 30px; }
+      .sidebar .itinerary-container .btn-day:hover {
+        background-color: #4A5060;
+        color: #d3d3d3; }
+    .sidebar .itinerary-container .removers {
+      padding-left: 15px;
+      font-size: 1.4em;
+      color: #FD4D5C;
+      position: relative;
+      top: 7px; }
+    .sidebar .itinerary-container ul li {
+      font-size: 1.3em; }
+    .sidebar .itinerary-container .plus {
+      margin-left: 15px;
+      background-color: #26AD6A;
+      border-color: #26AD6A; }
+      .sidebar .itinerary-container .plus:hover {
+        background-color: #FFB87D; }
+
+.map-container {
+  width: 70%;
+  height: 100%;
+  float: left; }
+
+#map-canvas {
+  width: 100%;
+  height: 100%; }

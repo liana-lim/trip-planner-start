@@ -1,0 +1,229 @@
+$bright-red: #FD4D5C;
+// $deep-navy: #474D5C;
+$deep-navy: #3A3F4F;
+$bright-blue: #58D4E1;
+$orange: #FFB87D;
+$kelly-green: #26AD6A;
+$lighter-slate-gray: #4A5060;
+$light-gray-text: #d3d3d3;
+$turquoise: #2cddc8;
+
+html {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+header {
+  background-color: $deep-navy;
+  height: 7em;
+
+  h1 {
+    margin: 0;
+    background-color: $bright-red;
+    display: inline-block;
+    float: left;
+    line-height: 99px;
+    padding: 0 50px;
+    color: #fff;
+    font-weight: 400;
+    width: 30%;
+    text-align: center;
+  }
+
+  .glyphicon-apple {
+    padding-right: 8px;
+  }
+
+  nav {
+  float: left;
+
+    ul {
+      padding: 0;
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+        height: 98px;
+        width: 98px;
+        // margin-left: 1px;
+        font-size: 1.4em;
+
+        a {
+          text-align: center;
+          display: block;
+          padding-top: 22px;
+          color: #fff;
+          &:hover, &:active {
+            text-decoration: none;
+            color: #fff;
+
+            .nav-icon {
+              color: $deep-navy;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav-home {
+    background-color: $bright-blue;
+  }
+
+  .nav-about {
+    background-color: $orange;
+    position: relative;
+    right: 2px;
+
+  }
+
+  .nav-contact {
+    background-color: $kelly-green;
+    position: relative;
+    right: 5px;
+  }
+
+  .nav-icon {
+    display: block;
+    font-size: 1.7em;
+  }
+}
+
+.sidebar {
+  background-color: $deep-navy;
+  clear: both;
+  float: left;
+  width: 30%;
+  height: 100%;
+
+  h2 {
+    margin: 0;
+    color: #fff;
+    background-color: $lighter-slate-gray;
+    text-align: center;
+    color: $light-gray-text;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    top: 8px;
+    right: 8px;
+    font-size: 1.2em;
+  }
+
+  .info-sidebar {
+    margin-bottom: 30px;
+    overflow: auto;
+    zoom: 1;
+  }
+
+  .hotels, .restaurants, .activities {
+    font-family: 'Open Sans', sans-serif;
+    color: $light-gray-text;
+    clear: both;
+
+    .form-group {
+      padding: 0 20px;
+      clear: both;
+      margin-bottom: 70px;
+    }
+
+    label {
+      font-size: 1.5em;
+      font-weight: 300;
+      clear: both;
+      display: block;
+    }
+    select {
+      width: 80%;
+      float: left;
+      clear: both;
+      background-color: $light-gray-text;
+    }
+
+    .check {
+      float: left;
+      padding-left: 15px;
+      padding-top: 3px;
+      font-size: 1.8em;
+      color: $kelly-green;
+    }
+
+
+  }
+
+  .activities {
+    margin-bottom: 40px;
+  }
+
+  .itinerary-container {
+    padding: 0 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    color: $light-gray-text;
+
+    h3 {
+      font-family: 'Open Sans', sans-serif;
+      color: $light-gray-text;
+      font-weight: 300;
+    }
+
+    .btn-day {
+      background-color: $turquoise;
+      color: $lighter-slate-gray;
+      border-color: $turquoise;
+      border-radius: 30px;
+
+      &:hover {
+        background-color: $lighter-slate-gray;
+        color: $light-gray-text;
+      }
+    }
+
+    .removers {
+      padding-left: 15px;
+      font-size: 1.4em;
+      color: $bright-red;
+      position:relative;
+      top: 7px;
+    }
+
+    ul li {
+      font-size: 1.3em;
+    }
+    .plus {
+      margin-left: 15px;
+      background-color: $kelly-green;
+      border-color: $kelly-green;
+
+      &:hover {
+        background-color: $orange;
+      }
+    }
+
+  }
+
+}
+
+.map-container {
+  width: 70%;
+  height:100%;
+  float: left;
+}
+
+#map-canvas {
+  width:100%;
+  height:100%;
+}

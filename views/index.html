@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+	<div class="sidebar">
+		<div class="info-sidebar">
+
+			<h2><span class="glyphicon glyphicon-info-sign info" aria-hidden="true"></span>Trip Info</h2>
+
+			<div class="hotels">
+
+				<div class="form-group">
+					<label for="Hotels">Hotels</label>
+					<select name="Hotels" class="form-control">
+
+						{%for hotel in hotels %}
+					  		<option value={{hotel.name}}>{{hotel.name}}</option>
+					  	{% endfor %}
+					</select>
+					<a href=""><span class="glyphicon glyphicon-ok-circle check" aria-hidden="true"></span></a>
+				</div>
+
+
+			</div>
+
+			<div class="restaurants">
+
+				<div class="form-group">
+					<label for="Restaurants">Restaurants</label>
+
+					<select name="Restaurants" class="form-control">
+						{%for restaurant in restaurants %}
+					  <option value={{restaurant.name}}>{{restaurant.name}}</option>
+					  	{% endfor %}
+					</select>
+					<a href=""><span class="glyphicon glyphicon-ok-circle check" aria-hidden="true"></span></a>
+				</div>
+
+			</div>
+
+			<div class="activities">
+
+				<div class="form-group">
+					<label for="Activities">Activities</label>
+
+					<select name="Activities" class="form-control">
+						{%for activity in activities %}
+					  <option value={{activity.name}}>{{activity.name}}</option>
+					  	{% endfor %}
+					</select>
+					<a href=""><span class="glyphicon glyphicon-ok-circle check" aria-hidden="true"></span></a>
+				</div>
+
+			</div>
+
+		</div> <!-- end .info -->
+
+		<div class="itinerary">
+			<h2><span class="glyphicon glyphicon-calendar info" aria-hidden="true"></span>Day 1</h2>
+
+				<div class="itinerary-container">
+
+					
+					<button type="button" class="btn btn-default btn-day">1</button>
+					<button type="button" class="btn btn-default btn-day">2</button>
+					<button type="button" class="btn btn-default btn-day">3</button>
+				
+
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default plus">+</button>
+					</div>
+
+					<h3>Place To Stay</h3>
+					<ul class="planned-hotel">
+						<li>Hotel<a href=""><span class="glyphicon glyphicon-remove-circle removers" aria-hidden="true"></span></a></li>
+					</ul>
+
+					<h3>Where To Eat</h3>
+					<ul class="planned-restaurants">
+						<li>Restaurant<a href=""><span class="glyphicon glyphicon-remove-circle removers" aria-hidden="true"></span></a></li>
+					</ul>
+
+					<h3>Things To Do</h3>
+					<ul class="planned-activities">
+						<li>Activity<a href=""><span class="glyphicon glyphicon-remove-circle removers" aria-hidden="true"></span></a></li>
+					</ul>
+
+				</div>
+
+
+
+		</div>
+
+	</div> <!-- end .sidebar -->
+
+	<div class="map-container">
+		<div id="map-canvas">
+			
+		</div>
+	</div>
+
+
+
+{% endblock %}
