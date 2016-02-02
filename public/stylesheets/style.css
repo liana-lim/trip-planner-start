@@ -54,11 +54,11 @@ header {
   header .nav-about {
     background-color: #FFB87D;
     position: relative;
-    right: 2px; }
+    right: 3px; }
   header .nav-contact {
     background-color: #26AD6A;
     position: relative;
-    right: 5px; }
+    right: 6px; }
   header .nav-icon {
     display: block;
     font-size: 1.7em; }
